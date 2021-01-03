@@ -279,7 +279,7 @@
 
 
       <div class="site-section" id="blog-section">
-        <div class="container-fluid">
+        <div class="container">
           <div class="row">
             <div class="col-12 text-center mb-5">
               <div class="block-heading-1" data-aos="fade-up" data-aos-delay="">
@@ -289,8 +289,21 @@
             </div>
           </div>
           <div class="row">
-
             <div class="col-md-12 col-lg-12" data-aos="fade-up" data-aos-delay="">
+              <div id="mens" class="row"></div>
+            </div><br>  
+            <div class="col-md-12 col-lg-12" data-aos="fade-up" data-aos-delay="">
+              <div id="acefitnesse" class="row"></div>
+            </div><br>
+            <div class="col-md-12 col-lg-12" data-aos="fade-up" data-aos-delay="">
+              <div id="afpafitness" class="row"></div>
+            </div><br>
+            <div class="col-md-12 col-lg-12" data-aos="fade-up" data-aos-delay="">
+              <div id="mindbody" class="row"></div>
+            </div>
+
+
+            <!-- <div class="col-md-12 col-lg-12" data-aos="fade-up" data-aos-delay="">
               <rssapp-carousel id="UJmyY4UTj1jUi5AB"></rssapp-carousel><script src="js/window.RssApp.js" type="text/javascript" async></script><br>
             </div>
 
@@ -305,9 +318,26 @@
             <div class="col-md-12 col-lg-12" data-aos="fade-up" data-aos-delay="">
               <rssapp-carousel id="v1AhcuoXc7hITskE"></rssapp-carousel><script src="https://widget.rss.app/v1/carousel.js" type="text/javascript" async></script>
             </div>
+            
+
+            <div id="myDiv2"></div>
+            <script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
+            <script>
+              const url = 'https://www.mensjournal.com/feed/'
+              const div = document.getElementById('myDiv2')
+              feednami.load(url)
+              .then(feed => {
+                div.innerHTML = ''
+                console.log(feed)
+                for(let entry of feed.entries){
+
+                  div.innerHTML += `${entry.title}<br><img class='myimage' 'title' src='${entry.enclosures[0].url}'><br><br>`
+                }
+              })
+            </script> -->
           </div>
-          </div> 
-        </div>
+        </div> 
+      </div>
       
 
 
@@ -415,6 +445,10 @@
       <script src="js/jquery-3.3.1.min.js"></script>
       <script src='https://kit.fontawesome.com/a076d05399.js'></script>
       <script src="js/popper.min.js"></script>
+      <script src="js/rss.js"></script>
+      <script src="js/rss2.js"></script>
+      <script src="js/afpa.js"></script>
+      <script src="js/mindbody.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/owl.carousel.min.js"></script>
       <script src="js/jquery.sticky.js"></script>
@@ -426,27 +460,5 @@
       <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
       <script src="js/main.js"></script>
       <script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
-
-      <script type="javascript">
-        let url = 'http://feeds.bbci.co.uk/news/technology/rss.xml';
-      const textarea = document.querySelector('#feed-textarea > ul');
-
-      const date = new Date();
-      document.querySelector('#date').innerHTML = date.toDateString();
-        
-        feednami.load(url)
-        .then(feed => {
-          textarea.value = ''
-          console.log(feed);
-          for(let entry of feed.entries){
-              //create a list element
-              let li = document.createElement('li');
-              //add HTML content to list items
-              li.innerHTML = `<h4><a href="${entry.link}">${entry.title}</a></h4>`;
-              //append HTML content to list 
-              textarea.appendChild(li);
-          }
-        });
-      </script>
     </body>
     </html>

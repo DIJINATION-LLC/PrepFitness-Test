@@ -1433,7 +1433,126 @@ h1, h2, h3, h4, h5,
 .footer-suscribe-form .btn {
   background: #07B78E;
   color: #fff;
-  border-color: #07B78E; }
+  border-color: #07B78E; 
+}
+
+/*RSS------------ */
+
+/*body {
+  background: #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  font-family: 'Roboto', sans-serif;
+  margin:0;
+  padding:0;
+}
+
+ul {
+  list-style-type: none;
+}
+*/
+#Newsfeed {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 65px;
+}
+
+.RSScard {
+  padding: 20px 25px;
+
+  margin-left: 20px;
+  margin-top: 20px;
+
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 225px;
+
+  opacity: 0.875;
+  background-color: #000000;
+
+  color: #388E3C;
+  font-size: 0.85em;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0,0,0, 0.25);
+  float:left;
+  
+  -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.RSScard a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 0.75em;
+  font-weight: 300;
+  opacity: 1;
+}
+
+.RSScard:hover {
+  opacity: 1;
+  background-color: #202B33;
+}
+
+.RSS {
+  margin: 10px 0;
+}
+
+.RSS a {
+  font-size: 0.9em;
+  text-decoration: none;
+}
+
+.RSS a:hover {
+  color: #fff
+  text-decoration: none;
+}
+
+.RSS:hover {
+  background-color: #3c3c3c;
+  text-decoration: none;
+}
+
+.card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #000000;
+    background-clip: border-box;
+    border: 1px solid rgb(245 245 245);
+    border-radius: 0.25rem;
+}
+
+.card-img-top {
+    width: auto;
+    height: 260px;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+    object-fit: cover;
+}
+
+.myimage {
+  width: 50%
+}
+
+.title {
+
+  font-size: 2rem;
+  font-weight: 700;
+}
 
 .pricing {
   background: #333;
