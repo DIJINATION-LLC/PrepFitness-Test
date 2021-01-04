@@ -1521,6 +1521,7 @@ ul {
 
 .card {
     position: relative;
+    height: 40vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1544,6 +1545,10 @@ ul {
     object-fit: cover;
 }
 
+.no {
+    flex-wrap: nowrap;
+}
+
 .myimage {
   width: 50%
 }
@@ -1553,6 +1558,8 @@ ul {
   font-size: 2rem;
   font-weight: 700;
 }
+
+
 
 .pricing {
   background: #333;
