@@ -138,7 +138,7 @@ function loadRSS(link, htmlContainer, linktext) {
         var entry = entries[i];
         container.append(
           '<div class="col-md-4 col-sm-6"><div class="card RSS"><img class="card-img-top img-fluid" src="' +
-            entry.enclosures[0].url +
+            //entry.enclosures[0].url +
             '"><div class="card-body"><h5><a href="' +
             entry.link +
             '"  target="_blank" class="stretched-link">' +
