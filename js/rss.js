@@ -7,9 +7,12 @@ $(document).ready(function() {
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 $(document).ready(function () {
 =======
+=======
+>>>>>>> parent of 7e042aa (Update rss.js)
 =======
 >>>>>>> parent of 7e042aa (Update rss.js)
 function loadRSS(link, htmlContainer, linktext) {
@@ -18,7 +21,10 @@ function loadRSS(link, htmlContainer, linktext) {
 
   feednami.load(url, function(result) {
 <<<<<<< HEAD
+<<<<<<< HEAD
     debugger
+=======
+>>>>>>> parent of 7e042aa (Update rss.js)
 =======
 >>>>>>> parent of 7e042aa (Update rss.js)
     if (result.error) {
@@ -47,7 +53,10 @@ function loadRSS(link, htmlContainer, linktext) {
 
 $(document).ready(function() {
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 7e042aa (Update rss.js)
 =======
 >>>>>>> parent of 7e042aa (Update rss.js)
   loadRSS(
@@ -58,9 +67,12 @@ $(document).ready(function() {
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 $(document).ready(function () {
 =======
+=======
+>>>>>>> parent of 7e042aa (Update rss.js)
 =======
 >>>>>>> parent of 7e042aa (Update rss.js)
 function loadRSS(link, htmlContainer, linktext) {
@@ -69,13 +81,17 @@ function loadRSS(link, htmlContainer, linktext) {
 
   feednami.load(url, function(result) {
 <<<<<<< HEAD
+<<<<<<< HEAD
     debugger
+=======
+>>>>>>> parent of 7e042aa (Update rss.js)
 =======
 >>>>>>> parent of 7e042aa (Update rss.js)
     if (result.error) {
       console.log(result.error);
     } else {
       var entries = result.feed.entries;
+<<<<<<< HEAD
 <<<<<<< HEAD
       for (var i = 0; i < 8; i++) {
         var entry = entries[i];
@@ -85,6 +101,8 @@ function loadRSS(link, htmlContainer, linktext) {
           '<div class="owl-item"><div class="col-md-4 col-sm-6"><div class="card RSS"><img class="card-img-top img-fluid" src="' +
             entry.enclosures[0] +
 =======
+=======
+>>>>>>> parent of 7e042aa (Update rss.js)
       for (var i = 0; i < 12; i++) {
         var entry = entries[i];
         var el = document.createElement( 'html' );
@@ -94,6 +112,9 @@ function loadRSS(link, htmlContainer, linktext) {
           '<div class="owl-item"><div class="col-md-4 col-sm-6"><div class="card RSS"><img class="card-img-top img-fluid" src="' +
             //entry.enclosures[0].url +
             imgSrc +
+<<<<<<< HEAD
+>>>>>>> parent of 7e042aa (Update rss.js)
+=======
 >>>>>>> parent of 7e042aa (Update rss.js)
             '"><div class="card-body"><h5><a href="' +
             entry.link +
@@ -112,7 +133,10 @@ function loadRSS(link, htmlContainer, linktext) {
 
 $(document).ready(function() {
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 7e042aa (Update rss.js)
 =======
 >>>>>>> parent of 7e042aa (Update rss.js)
   loadRSS(
@@ -123,9 +147,12 @@ $(document).ready(function() {
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 $(document).ready(function () {
 =======
+=======
+>>>>>>> parent of 7e042aa (Update rss.js)
 =======
 >>>>>>> parent of 7e042aa (Update rss.js)
 function loadRSS(link, htmlContainer, linktext) {
@@ -140,16 +167,22 @@ function loadRSS(link, htmlContainer, linktext) {
       for (var i = 0; i < 12; i++) {
         var entry = entries[i];
 <<<<<<< HEAD
+<<<<<<< HEAD
         container.append(
           '<div class="col-md-4 col-sm-6"><div class="card RSS"><img class="card-img-top img-fluid" src="' +
             entry.description[0].url +
 =======
+=======
+>>>>>>> parent of 7e042aa (Update rss.js)
         var el = document.createElement( 'html' );
         el.innerHTML = entry.description;
         var imgSrc = document.getElementById("mydiv").append( el.getElementsByTagName( 'img' )[0]);
         container.append(
           '<div class="col-md-4 col-sm-6"><div class="card RSS"><img class="card-img-top img-fluid" src="' +
             imgSrc +
+<<<<<<< HEAD
+>>>>>>> parent of 7e042aa (Update rss.js)
+=======
 >>>>>>> parent of 7e042aa (Update rss.js)
             '"><div class="card-body"><h5><a href="' +
             entry.link +
@@ -170,7 +203,10 @@ function loadRSS(link, htmlContainer, linktext) {
 
 $(document).ready(function() {
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 7e042aa (Update rss.js)
 =======
 >>>>>>> parent of 7e042aa (Update rss.js)
   loadRSS(
