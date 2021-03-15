@@ -225,10 +225,14 @@ function loadRSS(link, htmlContainer, linktext) {
 =======
         container.append(
           '<div class="col-md-4 col-sm-6"><div class="card RSS"><img class="card-img-top img-fluid" src="' +
+<<<<<<< HEAD
             //entry.enclosures[0].url +
 >>>>>>> parent of 08c8f59 (Update rss.js)
 =======
 >>>>>>> parent of 7e042aa (Update rss.js)
+=======
+            entry.enclosures[0].url +
+>>>>>>> parent of 485baf1 (Update rss.js)
             '"><div class="card-body"><h5><a href="' +
             entry.link +
             '"  target="_blank" class="stretched-link">' +
